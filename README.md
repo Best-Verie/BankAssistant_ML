@@ -4,7 +4,7 @@ A domain-specific retail banking support assistant fine-tuned using TinyLlama (1
 
 The assistant answers customer questions strictly based on BestVerie Bank policy (savings tiers, transfer fees, ATM rules, mobile money cash-out).
 
- Project Overview
+# # # Project Overview
 
 This project demonstrates:
 
@@ -20,7 +20,7 @@ Deployment via Gradio + Hugging Face Spaces
 
 Domain: Retail Banking / Finance
 
- Base Model
+ # # # Base Model
 
 TinyLlama/TinyLlama-1.1B-Chat-v1.0
 
@@ -28,7 +28,7 @@ Fine-tuned using PEFT LoRA
 
 Trained on Google Colab (T4 GPU)
 
- Dataset
+# # #  Dataset
 
 The dataset was generated from structured BestVerie Bank policy rules:
 
@@ -44,7 +44,7 @@ Out-of-domain refusal examples
 
 Format: JSONL (chat-style instruction-response)
 
- Fine-Tuning Configuration
+ # # # Fine-Tuning Configuration
 
 Learning Rate: 1e-4 (best run)
 
@@ -60,7 +60,7 @@ Quantization: 4-bit (QLoRA)
 
 Evaluation: ROUGE
 
- Results
+# # #  Results
 
 Fine-tuned model outperforms base model in:
 
@@ -80,11 +80,11 @@ ROUGE-2: ~0.81
 
 ROUGE-L: ~0.83
 
- Deployment
+ # # # Deployment
  Hugging Face Model:
 https://huggingface.co/Best-Verie/bestverie-bank-lora
 
- Live Demo (HF Spaces):
+# # #  Live Demo (HF Spaces):
 https://huggingface.co/spaces/Best-Verie/bestverie-bank-assistant
 
 The deployed app loads:
@@ -93,6 +93,6 @@ Base model from Hugging Face
 
 LoRA adapter from this repository
 
-Demo Video
+# # # Demo Video
 https://share.vidyard.com/watch/m6kS7CBs8ZyzLcw186tyJF
 
